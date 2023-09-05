@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html>
 <head>
-    <title>Название страницы</title>
-</head>   
+  <title>Список гиперссылок</title>
+</head>
 <body>
-    <a href="https://www.kubsu.ru/index.php">КубГУ</a>
-        <a href="http://kubsu.ru/">КубГУ</a>
-        <img class="MMImage-Origin" src="https://www.st-montaj.ru/wp-content/uploads/2022/05/krasivye-chastnye-doma-100-foto-domov-v-sovremennom-stile-1252c93.jpg">
-        width = "200" height = "300"
-    
+<h1>Список гиперссылок</h1>
+<ol>
+  <li><a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+  <li><a href="https://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе HTTPS</a></li>
+  <img class="MMImage-Origin" src="https://s1.1zoom.ru/big3/474/354282-admin.jpg">
+  <li><a href="internal-page.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+  <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+  <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+  <li><a href="page.html?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами в URL</a></li>
+  <li><a href="page.html?id=123">Ссылка с параметром id в URL</a></li>
+  <li><a href="current-page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+  <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+  <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше</a></li>
+  <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+  <li><p>Контекстная <a href="#">ссылка</a> в тексте абзаца</p></li>
+  <li><a href="https://example.com#fragment">Ссылка на фрагмент страницы стороннего сайта</a></li>
+  <li><a href="">Ссылка с пустым href</a></li>
+  <li><a>Ссылка без href</a></li>
+  <li><a href="http://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+  <li><a href="http://example.com" meta name="robots" content="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+</ol>
 
-
+<ol>
+  <li><a href="ftp://username:password@example.com">Ссылка на файл на сервере FTP с авторизацией</a></li>
+</ol>
 </body>
+</html>
