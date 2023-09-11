@@ -181,12 +181,56 @@
         <area shape="circle" coords="259,100,100" href="https://github.com/Nesvetaylov" alt="Круглая область">
     </map>
     
+<form action="/forum.php" method="post">
+    <li>
+        Email: <input name="email" />
+    </li>
+    <br>
+    <li>
+        ФИО: <input name="fio" />
+    </li>
+    <br>
+    <li>
+        Комментарий:<input name="comment"></input>
+    </li>
+    <br>
+    <li>
+        Дата рождения:<input name="data"></input>
+    </li>
+    <br>
+    <li>
+        <input type="radio" id="radioButton1"> Мужской</input><input type="radio" id="radioButton1"> Женский</input>
+    </li>
+    <br>
+    <li>
+        <select name="user_choise_of_programming language">
+            <option value="1">Pascal</option>
+            <option value="2">C</option>
+            <option value="3">C++</option>
+            <option value="4">JavaScript</option>
+            <option value="5">PHP</option>
+            <option value="6">Haskel</option>
+            <option value="7">Clojure</option>
+            <option value="8">Prolog</option>
+            <option value="9">Scala</option>
+          </select>
+    </li>
+    <br>
+    <li>Биография:<style type="text/css"> 
+            textarea[name="details"] { 
+              resize: none; 
+            } 
+            </style>
+            <textarea name="details" cols="35" rows="6" placeholder="Текст биографии"></textarea>
+    </li>
+    <br>
+    <li>
+        Со страницей ознакомлен/а<input id="html" type="checkbox"><label for="html"></label>
+    </li>
+    <br>
+    <button>Сохранить</button>
+</form>
 
 
-
-    <form action="/forum.php" method="post">
-    <li>Email: <input name="email" /></li>
-    <li>ФИО: <input name="fio" /></li>
-    <li>Комментарий:<input name="comment"></input></li>
-    </form>
+   
 </body>
