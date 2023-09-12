@@ -194,31 +194,15 @@
             <area shape="circle" coords="450,300,100" href="https://github.com/Nesvetaylov" alt="Круглая область">
         </map>
     </li>
-    
+</ul>
     
 
-<form action="/forum.php" method="post">
-    <li>
-        Email: <input name="email" />
-    </li>
-    <br>
-    <li>
-        ФИО: <input name="fio" />
-    </li>
-    <br>
-    <li>
-        Комментарий:<input name="comment"></input>
-    </li>
-    <br>
-    <li>
-        Дата рождения:<input name="data"></input>
-    </li>
-    <br>
-
-    Пол:<label><input type="radio" name="male" value="gender">Мужской</input></label><label><input type="radio" name="male" value="gender"> Женский</input></label>
-    <br>
-    <br>
-    <li>
+<form action="/" method="post">
+        Email: <input name="email"><br>
+        ФИО: <input name="fio"><br>
+        Комментарий:<input name="comment"><br>
+        Дата рождения:<input name="data"><br>
+        Пол:<label><input type="radio" name="male" value="gender">Мужской</label><label><input type="radio" name="male" value="gender"> Женский</label><br>
         Любимые языки: <select name="user_choise_of_programming language">
             <option value="1">Pascal</option>
             <option value="2">C</option>
@@ -230,21 +214,9 @@
             <option value="8">Prolog</option>
             <option value="9">Scala</option>
           </select>
-    </li>
-    <br>
-    <li>Биография:<style type="text/css"> 
-            textarea[name="details"] { 
-              resize: none; 
-            } 
-            </style>
-            <textarea name="details" cols="35" rows="6" placeholder="Текст биографии"></textarea>
-    </li>
-    <br>
-    <li>
-        Со страницей ознакомлен/а<input id="html" type="checkbox"><label for="html"></label>
-    </li>
-    <br>
-    <button>Сохранить</button>
+        Биография:<textarea name="details" cols="35" rows="6" placeholder="Текст биографии"></textarea><br>
+        Со страницей ознакомлен/а<input id="html" type="checkbox"><label for="html"></label><br>
+        <button>Сохранить</button>
 </form>
-</ul>  
+  
 </body>
