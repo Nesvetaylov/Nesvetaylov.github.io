@@ -3,19 +3,8 @@
 
 <head>
     <title>Развитие кинематографа.Несветайлов</title>
-    <header>
-        <img src="images.jpg" width="2000" height="150" alt="Логотип"> <!-- Логотип сайта -->
-        <div id="menu"> <!-- Меню -->
-          <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="/about">О нас</a></li>
-            <li><a href="/contacts">Контакты</a></li>
-          </ul>
-        </div>
-    </header>
         <style>
         a {
-        color:black;
         text-decoration: none;
         }
         body {
@@ -188,12 +177,24 @@
 
 
     <ul>
-    <li><a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
-    <li><a href="https://www.st-montaj.ru/wp-content/uploads/2022/05/krasivye-chastnye-doma-100-foto-domov-v-sovremennom-stile-1252c93.jpg" width = "200" height = "300" alt="Ссылка-изображение"> Изображение дома</a></li>
-    <li><a href="https://ru.wikipedia.org/wiki/Заглавная_страница"> Основная ссылка на Википедию </a></li>
-    <li><a href="zver.html">Ссылка на внутреннюю страницу</a></li>
-    <li><a href="index.html" alt="Сокр ссылка на основу">Сокращённая ссылка на основную страницу</a></li>
-    <li><a href="url?param=horror">Ссылка с параметром id</a></li>
+    <li>
+        <a href="http://kubsu.ru" title="Вика отличница">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a>
+    </li>
+    <li>
+        <a href="https://www.st-montaj.ru/wp-content/uploads/2022/05/krasivye-chastnye-doma-100-foto-domov-v-sovremennom-stile-1252c93.jpg" width = "200" height = "300" alt="Ссылка-изображение"> Изображение дома</a>
+    </li>
+    <li>
+        <a href="https://ru.wikipedia.org/wiki/Заглавная_страница">Основная ссылка на Википедию </a>
+    </li>
+    <li>
+        <a href="zver.html">Ссылка на внутреннюю страницу</a>
+    </li>
+    <li>
+        <a href="index.html" alt="Сокр ссылка на основу">Сокращённая ссылка на основную страницу</a>
+    </li>
+    <li>
+        <a href="url?param=horror">Ссылка с параметром id</a>
+    </li>
     <li>
         <a href="poezd.mp4 ">Относительная ссылка на страницу в текущем каталоге</a>
     </li>
@@ -214,21 +215,45 @@
         <a href="https://example.com" rel="noindex">Ссылка запрещенная для индексации поисковиками</a>
     </li>
     <li>
-        <a>https://example.com/ Cсылка без href</a>
+        <a>Cсылка без href</a>
     </li>
     <li>
-        <img src="star-camera.jpg" width="900" height="600" alt="Квадратная область">
+        <a href="https://ru.wikipedia.org/wiki/Пространство#Физика">Ссылка на фрагмент стороннего сайта</a>
     </li>
-    <map id="Kvadrat" name="Kvadrat">
-        <area shape="rect" coords="137,16,392,241" href="https://vk.com/saint_juuuly" alt="Прямоугольная область">
-    </map>
     <li>
-        <img src="chel-cam.jpg" width="900" height="600" alt="Круглая область">
+        <a href="https://ru.m.wikipedia.org/wiki/Камера?id=123">Ссылка с id</a>
     </li>
-    <map name="Krug">
-        <area shape="circle" coords="259,100,100" href="https://github.com/Nesvetaylov" alt="Круглая область">
-    </map>
+    <li>
+        <a href="./index.html">Относительная ссылка на страницу в текущем каталоге</a>
+    </li>
+    <li>
+        <a href="./about/about image.html">Ссылка на about</a>
+    </li>
+    <li>
+        <a href="../Papka web/urovni/1.html">Относительная сылка на страницу в каталоге уровнем выше</a>
+    </li>
+    <li>
+        <a href="../Papka web/urovni/uroven_nizhe/2.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a>
+    </li>
+    <li>
+        <a href="ftp://saint_juuuly:2546@ftpupload.net/web/open.txt">Как регаться на FTP</a>
+    </li>
+    <li>
+        <img src="star-camera-square.jpg" width="900" height="600" alt="Квадратная область" usemap="#Kvadrat">
+        <map name="Kvadrat">
+            <area shape="rect" coords="280,215,630,405" href="https://vk.com/saint_juuuly" alt="Прямоугольная область">
+        </map>
+    </li>
+
+    <li>
+        <img src="chel-cam-circle.jpg" width="900" height="600" alt="Круглая область" usemap="#krug">
+        <map name="krug">
+            <area shape="circle" coords="450,300,100" href="https://github.com/Nesvetaylov" alt="Круглая область">
+        </map>
+    </li>
     
+    
+
 <form action="/forum.php" method="post">
     <li>
         Email: <input name="email" />
@@ -246,9 +271,9 @@
         Дата рождения:<input name="data"></input>
     </li>
     <br>
-    <li>
-        <input type="radio" id="radioButton1"> Мужской</input><input type="radio" id="radioButton1"> Женский</input>
-    </li>
+
+    Пол:<label><input type="radio" name="male" value="gender">Мужской</input></label><label><input type="radio" name="male" value="gender"> Женский</input></label>
+    <br>
     <br>
     <li>
         Любимые языки: <select name="user_choise_of_programming language">
@@ -278,8 +303,5 @@
     <br>
     <button>Сохранить</button>
 </form>
-</ul>
-
-
-   
+</ul>  
 </body>
