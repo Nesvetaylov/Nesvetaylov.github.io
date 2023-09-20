@@ -1,17 +1,21 @@
-header {
-        width: auto;
-        background: #2a3936;
-        height: 120px;
-        margin: 0;
-        
-}
+
+header{
+    background: #528f73;
+	width: 100%;
+	height: 120px;
+    }
+    .shapka {
+        color: #ffee00;   
+        margin-left: 300px; 
+    }
     a {
     text-decoration: none;
         }
     body {
-        background: #c9d6d0;
+    background: #c7e2d5;
     /* background: url("background2.jpg"); */
     background-size: cover;
+    margin: 0;
         }
     .title{
 	font-size: 36px;
@@ -20,16 +24,21 @@ header {
     }
     #logo {
         float:left;
-        margin:10px;
-        width:100px;
-        height:100px;
+        margin:0;
+        width:120px;
+        height:120px;
     }
+    
     .menu{
 	list-style: none;
 	position: absolute;
-	top: -20px;
+	top: 35px;
 	right: 40px;
     font-size: 30px;
+    }
+    a.men {
+        color : #ffd23d;
+        padding:8px;
     }
     p{
         font-size: 22px;
