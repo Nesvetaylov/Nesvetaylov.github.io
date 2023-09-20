@@ -1,7 +1,0 @@
-﻿  Client.cpp
-F:\ComputersNetwork\Client\Client\Client.cpp(14,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-F:\ComputersNetwork\Client\Client\Client.cpp(17,11): warning C4244: инициализация: преобразование "time_t" в "int", возможна потеря данных
-F:\ComputersNetwork\Client\Client\Client.cpp(18,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-F:\ComputersNetwork\Client\Client\Client.cpp(52,28): warning C4244: =: преобразование "std::streamoff" в "long", возможна потеря данных
-F:\ComputersNetwork\Client\Client\Client.cpp(62,27): warning C4244: =: преобразование "std::streamoff" в "long", возможна потеря данных
-  Client.vcxproj -> F:\ComputersNetwork\Client\x64\Debug\Client.exe
