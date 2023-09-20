@@ -1,0 +1,7 @@
+﻿  Server.cpp
+F:\ComputersNetwork\Server\Server\Server.cpp(80,44): warning C4244: =: преобразование "std::streamoff" в "long", возможна потеря данных
+F:\ComputersNetwork\Server\Server\Server.cpp(101,44): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+F:\ComputersNetwork\Server\Server\Server.cpp(106,46): warning C4244: =: преобразование "std::streamoff" в "long", возможна потеря данных
+F:\ComputersNetwork\Server\Server\Server.cpp(139,35): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+F:\ComputersNetwork\Server\Server\Server.cpp(60): warning C4715: Stipendia: значение возвращается не при всех путях выполнения
+  Server.vcxproj -> F:\ComputersNetwork\Server\x64\Debug\Server.exe
