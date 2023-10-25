@@ -9,6 +9,12 @@
     <title>Calculator</title>
 </head>
 
+
+
+
+
+
+
 <body class="body">
     <header>
         <div class="logo_shapka">
@@ -17,6 +23,10 @@
         </div>
         </div>
     </header>
+
+
+
+
 
 
     <h1 class="zagolovok">Калькулятор стоимости заказа</h1>
@@ -44,18 +54,54 @@
         </div>
     </div>
 
-    <label for="quantity">Количество товара:</label>
-    <input type="number" id="quantity" min="1" required><br><br>
 
-    <label for="product">Выберите товар, который больше всего вам нравится:</label>
-    <select id="product" required>
-        <option value="product1">Фотоаппарат</option>
-        <option value="product2">Камера</option>
-        <option value="product3">Телефон</option>
-        <option value="product4">Полароид</option>
-    </select><br><br>
 
-    <button onclick="calculateCost()">Подсчитать стоимость</button>
+    <div class="container p-0">
+        <div class="row">
+            <main class="col">
+                <!--калькулятор-->
+                <div class="col-12 col-md-10 mx-auto d-flex flex-column justify-content align-items-center">
+                    <label for="quantity">Количество:</label>
+                    <input type="number" id="quantity" min="1" value="1" onchange="calculateCost()"><br>
+                    <label>Погладить:</label>
+                    <div class="flex-row justify-content">
+                        <input type="radio" name="product" value="product1" onchange="calculateCost()">
+                        Фотоаппарат
+                        <br>
+                        <input type="radio" name="product" value="product2" onchange="calculateCost()"> Камера
+                        <br>
+                        <input type="radio" name="product" value="product3" onchange="calculateCost()"> Телефон
+                        <br>
+                        <input type="radio" name="product" value="product4" onchange="calculateCost()"> Полароид
+                        <br>
+                        <input type="radio" name="product" value="product5" onchange="calculateCost()"> Камера и
+                        полароид
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="option">Опция товара:</label>
+                        <select id="option" onchange="calculateCost()">
+                            <option value="option0">ничего</option>
+                            <option value="option1">Добавить защитный чехол к заказу</option>
+                            <option value="option2">Добавить дополнительную память к заказу</option>
+                            <option value="option3">Добавить стабилизатор к заказу</option>
+                            <option value="option4">Добавить внешний микрофон к заказу</option>
+                            <option value="option5">Добавить подводный бокс к заказу</option>
+                        </select><br><br>
+                    </div>
+                    <div class="flex-row justify-content">
+                        <label for="property">Дополнительная годовая гарантия на товар</label>
+                        <input type="checkbox" id="property" onchange="calculateCost()"><br><br>
+                    </div>
+                    <div class="price">
+                        <h5>Цена: 0 руб.</h5>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
 
 
     <div id="result"></div>
@@ -66,7 +112,7 @@
     <footer>
         <h5 class="pod">Несветайлов Владислав 24гр</h5>
     </footer>
-    <script src="Main.js"></script>
+    <script src="Main.js" defer></script>
 </body>
 
 </html>
