@@ -1,0 +1,30 @@
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-group {
+    display: flex;
+    justify-content: center;
+}
+
+#prev,
+#next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#pager {
+    text-align: center;
+}
