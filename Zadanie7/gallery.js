@@ -30,5 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("total-pages").textContent = totalPages;
     }
 
+
     updateGallery();
 });
+
+
