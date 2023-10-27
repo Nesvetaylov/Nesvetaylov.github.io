@@ -2,9 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+}
+
+body {
+    background-image: url('kinou.png');
+    background-size: auto;
+    background-color: rgb(0, 0, 0);
 }
 
 .image-group {
+    padding: 60px;
+    height: 600px;
+    width: 300px;
     display: flex;
     justify-content: center;
 }
@@ -26,5 +36,15 @@
 }
 
 #pager {
+    font-family: Arial;
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
     text-align: center;
+}
+
+#prev img,
+#next img {
+    width: 75px;
+    height: 75px;
 }
