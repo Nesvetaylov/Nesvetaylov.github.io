@@ -21,7 +21,6 @@ $(document).ready(function () {
 
     // Save form data to localStorage
     function SaveData() {
-        const form = document.getElementById('feedback-form');
         const formData = new FormData(form);
         for (let [key, value] of formData.entries()) {
             localStorage.setItem(key, value);
@@ -30,7 +29,7 @@ $(document).ready(function () {
 
     // Load form data from localStorage
     function LoadData() {
-        const form = document.getElementById('feedback-form');
+        const form = document.getElementById("feedback-form");
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
             const value = localStorage.getItem(key);
@@ -43,32 +42,31 @@ $(document).ready(function () {
 
     // Open the popup form
     function OpenPopup() {
-        const popup = document.getElementById('popup');
-        const overlay = document.getElementById('overlay');
-        popup.style.display = 'block';
-        overlay.style.display = 'block';
-        history.pushState({ popupOpen: true }, '', '#popup');
+        const popup = document.getElementById("popup");
+        const overlay = document.getElementById("overlay");
+        popup.style.display = "block";
+        overlay.style.display = "block";
+        history.pushState({ popupOpen: true }, "", "#popup");
     }
 
     // Close the popup form
     function ClosePopup() {
-        const popup = document.getElementById('popup');
-        const overlay = document.getElementById('overlay');
-        popup.style.display = 'none';
-        overlay.style.display = 'none';
-        history.pushState({ popupOpen: false }, '', window.location.href.split('#')[0]);
-    }
+        const popup = document.getElementById("popup");
+        const overlay = document.getElementById("overlay");
+        popup.style.display = "none";
+        overlay.style.display = "none";
+        history.back();}
 
     // Clear form data
     function ClearForm() {
-        const form = document.getElementById('feedback-form');
+        const form = document.getElementById("feedback-form");
         form.reset();
         localStorage.clear();
     }
 
     // Event listeners
-    document.getElementById('button').addEventListener('click', OpenPopup);
-    document.getElementById('overlay').addEventListener('click', ClosePopup);
+    document.getElementById("button").addEventListener("click", OpenPopup);
+    document.getElementById("overlay").addEventListener("click", ClosePopup);
 
 
 
@@ -77,7 +75,7 @@ $(document).ready(function () {
 
 
     // Отправка данных формы без перезагрузки страницы
-    form.addEventListener('submit', function (event) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault();
         const formData = new FormData(form);
         // Отправка данных на сервер с помощью XHR, jQuery AJAX или fetch
@@ -99,7 +97,8 @@ $(document).ready(function () {
                     "Ошибка при отправке данных формы на сервер";
             }
         }).catch(function (error) {
-            document.getElementById("result").innerHTML = "Произошла ошибка:" + error;
+        document.getElementById("result").innerHTML =
+        "Произошла ошибка:" + error;
         });
 
         document.getElementById("feedback-form").reset();
